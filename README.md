@@ -5,13 +5,18 @@ The dataset used is the [gdp_interpolated_drifter](http://osmc.noaa.gov/erddap/t
 
 ### Install
 ```
-pip3 install -r requirements.txt
+$ pip3 install -r requirements.txt
+```
+Download the dataset
+```
+$ mkdir data
+$ wget -O ./data/small.csv http://osmc.noaa.gov/erddap/tabledap/gdp_interpolated_drifter.csv?ID%2Celat%2Celon&distinct()
 ```
 
 ### Run
 ```
-python3 flow.py
-python3 end.py
+$ python3 flow.py
+$ python3 end.py
 ```
 
 ### Results
